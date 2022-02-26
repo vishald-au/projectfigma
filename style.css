@@ -18,8 +18,16 @@
   --color-text-para: rgba(54, 58, 77, 0.75);
   --color-text-white: #ffffff;
 
-  --p-text: 28px;
-  --p-text-small: 18px;
+  --text-xlarge: 36px;
+  --text-large: 24px;
+  --text-medium: 18px;
+  --text-small: 14px;
+
+  --text-xlarge-lineheight: 42px;
+  --text-large-lineheight: 32px;
+  --text-medium-lineheight: 28px;
+  --text-small-lineheight: 24px;
+  --text-xsmall-lineheight: 18px;
 }
 
 /* Box sizing rules */
@@ -76,8 +84,8 @@ h1.title {
   display: none;
 }
 h2 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: var(--text-large);
+  line-height: var(--text-medium-lineheight);
   letter-spacing: -0.02em;
   margin-bottom: 26px;
   font-weight: 400;
@@ -90,8 +98,8 @@ h2 span {
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: var(--text-medium);
+  line-height: var(--text-small-lineheight);
   letter-spacing: -0.02em;
   text-transform: capitalize;
   font-weight: 400;
@@ -99,14 +107,14 @@ h3 {
 
 p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: var(--text-small-lineheight);
   opacity: 0.85;
   font-weight: 400;
 }
 
 main {
   margin: auto;
-  max-width: 382px;
+  max-width: 362px;
 }
 
 section.tabs {
@@ -117,7 +125,7 @@ section.tabs {
     "two three"
     "four five"
     "six blank";
-  grid-template-columns: 191px 191px;
+  grid-template-columns: 180px 180px;
   justify-content: center;
 }
 section.tabs.full-height {
@@ -132,7 +140,7 @@ section.tabs.full-height {
 }
 
 .gridequal {
-  height: 191px;
+  height: 180px;
   padding: 43px 10px 20px;
   display: flex;
   flex-direction: column;
@@ -196,8 +204,8 @@ section.gallery {
     "galleryone galleryone"
     "gallerytwo gallerythree"
     "galleryfour galleryfive";
-  grid-template-columns: 191px 191px;
-  grid-template-rows: 191px 191px 191px 191px;
+  grid-template-columns: 179px 179px;
+  grid-template-rows: 179px 179px 179px 179px;
   gap: 4px;
   margin-bottom: 25px;
 }
@@ -275,8 +283,8 @@ section.newsletter {
 }
 
 .special2 {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: var(--text-small);
+  line-height: var(--text-xsmall-lineheight);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0;
@@ -315,8 +323,8 @@ section.newsletter {
 .subarea2 h3 {
   padding: 3rem;
   text-align: center;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: var(--text-large);
+  line-height: var(--text-medium-lineheight);
 }
 .subarea3 {
   border-width: 0 1px 1px;
@@ -334,8 +342,8 @@ section.newsletter {
   border: 0;
   border-radius: 0;
   background: transparent;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: var(--text-medium);
+  line-height: var(--text-medium-lineheight);
   color: var(--color-text);
   padding: 0.2rem;
   height: 60px;
@@ -345,8 +353,8 @@ section.newsletter {
 
 .submittype {
   padding: 2rem;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: var(--text-small);
+  line-height: var(--text-xsmall-lineheight);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   width: 100%;
@@ -358,6 +366,7 @@ section.newsletter {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: var(--color-text);
 }
 .submittype .bordersvg {
   margin-left: 20px;
@@ -407,27 +416,27 @@ section.newsletter {
   }
 
   h2 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: var(--text-xlarge);
+    line-height: var(--text-xlarge-lineheight);
   }
 
   h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: var(--text-large);
+    line-height: var(--text-large-lineheight);
     margin-bottom: 16px;
     text-transform: inherit;
   }
 
   p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: var(--text-medium);
+    line-height: var(--text-medium-lineheight);
     color: var(--color-text-para);
     opacity: 1;
   }
 
   a.special {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: var(--text-small);
+    line-height: var(--text-xsmall-lineheight);
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
